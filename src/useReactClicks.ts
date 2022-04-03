@@ -10,7 +10,7 @@ export const useReactClicks = (
     delayLongClick = 300,
     delayDoubleClick = 200,
     disableContextMenu = true,
-  }: Options
+  }: Options = {}
 ) => {
   const numberOfClicks = useRef<number>(0)
   const isSwiping = useRef<boolean>(false)
