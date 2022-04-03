@@ -6,6 +6,19 @@
   "types": "lib/index.d.ts",
   "author": "Manjodh \"Jodhman\" Singh",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "hook",
+    "click",
+    "clicks",
+    "single",
+    "double",
+    "long",
+    "mobile",
+    "javascript",
+    "typescript",
+    "types"
+  ],
   "files": [
     "lib"
   ],
@@ -13,6 +26,7 @@
     "type": "git",
     "url": "https://github.com/jodhman/react-clicks"
   },
+  "homepage": "https://github.com/jodhman/react-clicks/blob/master/README.md",
   "scripts": {
     "build": "rm -rf lib && tsc",
     "publish:lib": "yarn build && npm publish"
