@@ -7,11 +7,10 @@ import { useContextMenu } from './useContextMenu'
 export const useReactClicks = (
   { singleClick = noop, doubleClick = noop, longClick = noop }: Callbacks,
   {
-    isPreventDefault = true,
     delayLongClick = 300,
     delayDoubleClick = 200,
     disableContextMenu = true,
-  }: Options = {}
+  }: Options
 ) => {
   const numberOfClicks = useRef<number>(0)
   const isSwiping = useRef<boolean>(false)
@@ -48,16 +47,16 @@ export const useReactClicks = (
       clearTimeout(timeoutLongClick.current)
     }
 
-    if (isPreventDefault && target.current) {
+    if (target.current) {
       target.current.removeEventListener('touchend', eventPreventDefault)
     }
-  }, [isPreventDefault])
+  }, [])
 
   const handleMouseDown = useCallback(
     (event: ClickEventType) => {
       const preventMobileGhostClick = (event: ClickEventType) => {
         // prevent ghost click on mobile devices
-        if (isPreventDefault && event.target) {
+        if (event.target) {
           event.target.addEventListener('touchend', eventPreventDefault, {
             passive: false,
           })
@@ -86,7 +85,6 @@ export const useReactClicks = (
       doubleClick,
       clearLongClick,
       delayLongClick,
-      isPreventDefault,
     ]
   )
 

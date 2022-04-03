@@ -11,7 +11,6 @@ export type Callbacks = {
 }
 
 export type Options = {
-  isPreventDefault?: boolean
   delayDoubleClick?: number
   delayLongClick?: number
   disableContextMenu?: boolean
