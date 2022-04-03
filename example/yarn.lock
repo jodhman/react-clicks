@@ -7065,12 +7065,10 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
-react-clicks@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-clicks/-/react-clicks-1.0.0.tgz#c858263675be5106b00ea7ecce50ce853c926244"
-  integrity sha512-KdSQSJrkmZbhSmynB3n7uXoybqZ9kQOkDcKMURpQf2AXsTotECkKiHZNsaEsAbrI52V1NdP8qqfIvF/eyEUM9w==
-  dependencies:
-    react "^18.0.0"
+react-clicks@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-clicks/-/react-clicks-1.0.3.tgz#76963da452175835c7c9145959d5a5b933177fa0"
+  integrity sha512-UgPYXWwEPoKafCad4UB288r0asIIKQjQsjyjeKoRptGB7AlhOps/Z2xLrWlV6Mky3+xKiiVgBvtkNZwCC6VTvw==
 
 react-dev-utils@^12.0.0:
   version "12.0.0"

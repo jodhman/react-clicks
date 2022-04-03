@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { useReactClicks } from 'react-clicks/lib'
+import { useReactClicks } from 'react-clicks'
 
 const Wrapper = styled.div`
   width: 100%;
