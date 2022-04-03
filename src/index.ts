@@ -19,7 +19,7 @@ interface Options {
   disableContextMenu?: boolean
 }
 
-export const useClicks = (
+export const useReactClicks = (
   { singleClick = noop, doubleClick = noop, longClick = noop }: Callbacks,
   {
     isPreventDefault = true,
