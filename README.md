@@ -4,6 +4,9 @@ react-clicks is a React.js hook enabling easy management of various
 click types(single, double & long) written in TypeScript.
 Optimised for both desktop & mobile.
 
+### Code Sandbox
+https://codesandbox.io/s/react-clicks-example-tt5pt5
+
 ##### Table of contents
 * **[Installation](#installation)**
 * **[Usage](#usage)**
