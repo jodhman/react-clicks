@@ -1,19 +1,27 @@
 {
   "name": "react-clicks",
   "version": "1.0.0",
-  "description": "",
+  "description": "A React.js hook enabling easy management of various click types(single, double & long) written in TypeScript.",
   "main": "index.js",
+  "author": "Manjodh \"Jodhman\" Singh",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jodhman/react-clicks"
+  },
   "scripts": {
-    "build": "npx tsc",
+    "build": "rm -rf lib && tsc",
     "publish:lib": "npm publish"
   },
-  "author": "Manjodh Singh",
-  "license": "ISC",
   "devDependencies": {
     "@types/react": "^17.0.43",
-    "typescript": "^4.6.3"
-  },
-  "dependencies": {
+    "typescript": "^4.6.3",
     "react": "^18.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.12.0"
   }
 }
