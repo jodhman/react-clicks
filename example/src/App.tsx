@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { useClicks } from './lib'
+import { useReactClicks } from 'react-clicks/lib'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -36,7 +36,7 @@ const Button = styled.button`
 function App() {
   const [clickType, setClickType] = useState('')
 
-  const clickProps = useClicks({
+  const clickProps = useReactClicks({
     singleClick: () => setClickType('Single Click'),
     doubleClick: () => setClickType('Double Click'),
     longClick: () => setClickType('Long Click')
